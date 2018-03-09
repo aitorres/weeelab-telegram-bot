@@ -320,9 +320,9 @@ HH:MM = {:02d}:{:02d}\n\nLatest log update:\n*{}*'.format(
                         for lines in self.log_lines:
                             if not ("INLAB" in lines):
                                 name = \
-                                    lines[47:lines.rfind(">")].encode('utf-8')
+                                    lines[47:lines.rfind(">"),47,80].encode('utf-8')
                                 (user_hours, user_minutes) = \
-                                    lines[39:lines.rfind("]")].split(':')
+                                    lines[39:lines.rfind("]"),39,46].split(':')
                                 partial_hours = datetime.timedelta(
                                     hours=int(user_hours),
                                     minutes=int(user_minutes))
