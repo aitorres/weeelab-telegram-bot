@@ -729,7 +729,7 @@ class BotWS(object):
 # call the main() until a keyboard interrupt is called
 if __name__ == '__main__':
     try:
-        thread.start_new_thread(main, ())
+        #thread.start_new_thread(main, ())
         conf = {
             '/': {
                 'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
