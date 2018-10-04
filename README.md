@@ -2,7 +2,7 @@
 [![License](http://img.shields.io/:license-GPL3.0-blue.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 ![Version](https://img.shields.io/badge/version-1.0-yellow.svg)
 
-WEEE-Open Telegram bot.
+WEEE-Open Telegram bot - DEV BRANCH.
 
 The goal of this bot is to obtain information about who is currently in the lab,  
 who has done what, compute some stats and, in general, simplify the life of our members...  
