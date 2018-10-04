@@ -3,14 +3,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[dev-packages]
+
 [packages]
 pyocclient = ">=0.4"
 requests = ">=2.14.2"
-
-[dev-packages]
+CherryPy = "==18.0.1"
 
 [requires]
-python_version = "3.6"
-
-[scripts]
-bot = "python weeelab_bot.py"
+python_version = "3.5"
