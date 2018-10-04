@@ -729,6 +729,7 @@ class BotWS(object):
 # call the main() until a keyboard interrupt is called
 if __name__ == '__main__':
     try:
+        print('test')
         #thread.start_new_thread(main, ())
         conf = {
             '/': {
@@ -741,6 +742,5 @@ if __name__ == '__main__':
         cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', 5000))})
         cherrypy.engine.start()
         cherrypy.engine.block()
-        main()
     except KeyboardInterrupt:
         exit()
