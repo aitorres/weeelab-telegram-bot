@@ -26,7 +26,7 @@ from datetime import timedelta
 import json
 import re  # "Parse" logs
 import traceback  # Print stack traces in logs
-import thread
+import _thread as thread
 import cherrypy
 
 
