@@ -737,7 +737,7 @@ if __name__ == '__main__':
                 'tools.sessions.on': True
             }
         }
-        cherrypy.tree.mount(BotWS(), '', conf)
+        cherrypy.tree.mount(BotWS(), '/', conf)
         cherrypy.config.update({'server.socket_host': '0.0.0.0'})
         cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', 5000))})
         cherrypy.engine.start()
