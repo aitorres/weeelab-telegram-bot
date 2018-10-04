@@ -713,17 +713,8 @@ class BotWS(object):
         """ method used to manage the GET request
         """
  
-        if len(uri) == 1:
-            operation = str(uri[0])
-            if operation in self.function_get:
-                try:
-                    print(params)
-                except (ValueError, IndexError):
-                    raise cherrypy.HTTPError(400)
-            else:
-                raise cherrypy.HTTPError(404)
-        else:
-            raise cherrypy.HTTPError(400)
+        print('Test')
+        cherrypy.session["result"] = 'Test'
         return cherrypy.session["result"]
 
 # call the main() until a keyboard interrupt is called
